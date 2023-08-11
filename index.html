@@ -39,10 +39,8 @@
                 </address>
 
                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width="32" height="22" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
+                    <svg class="svg-menu" width="32" height="22">
+                        <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
                     </svg>
                 </button>
 
@@ -463,24 +461,17 @@
         </div>
 
         <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                    <g clip-path="url(#clip0_583809_170)">
-                        <path d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" fill="#2E2F42" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_583809_170">
-                            <rect width="8" height="8" fill="white" />
-                        </clipPath>
-                    </defs>
+            <button class="modal-btn js-close-menu" type="button">
+                <svg class="modal-svg" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black-18dp"></use>
                 </svg>
             </button>
         
             <div class="mobile-menu-first">
                 <ul class="mobile-menu list">
-                    <li><a href="" class="mobile-menu-link link">Studio</a></li>
-                    <li><a href="" class="mobile-menu-link link">Portfolio</a></li>
-                    <li><a href="" class="mobile-menu-link link">Contacts</a></li>
+                    <li class="mobile-item"><a class="mobile-menu-link link current-menu" href="./index.html">Studio</a></li>
+                    <li class="mobile-item"><a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="mobile-item"><a class="mobile-menu-link link" href="">Contacts</a></li>
                 </ul>
             </div>
             <div class="mobile-menu-two">

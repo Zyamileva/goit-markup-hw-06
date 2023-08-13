@@ -195,6 +195,13 @@ img {
     }
 }
 
+/* @media screen and (min-width: 768px) {
+    .header-address {
+        justify-content: center;
+        align-items: center;
+    }
+} */
+
 .menu-toggle {
     min-height: 22px;
     min-width: 32px;
@@ -227,14 +234,22 @@ img {
     .header-address-list {
         display: flex;
         gap: 40px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-.header-address-item:not(:last-child) {
-    margin-bottom: 12px;
-}
+    .header-address-item:not(:last-child) {
+        margin-bottom: 12px;
+    }
 
-@media screen and (min-width: 768px) {
+ @media only screen and (min-width: 1158px) {
+.header-address-item:not(:last-child) {
+        margin-bottom: 0px;
+    }
+ }    
+
+@media only screen and (min-width: 768px) {
     .header-address-link {
         font-size: 12px;
         font-weight: 400;
@@ -245,7 +260,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media only screen and (min-width: 1158px) {
     .header-address-link {
         font-size: 16px;
         line-height: 1.5;
@@ -429,6 +444,12 @@ img {
     }
  
 @media only screen and (min-width: 768px) {
+    .section-two-element:not(:last-child) {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
     .section-two-element {
         width: calc((100% - 1 * 24px) / 2);
     }
@@ -593,9 +614,9 @@ img {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-@media only screen and (max-width: 767px) {
-    .section-four-item:not(:last-child) {
-        margin-bottom: 72px; 
+@media only screen and (max-width: 768px) {
+    .section-four-item:last-child {
+        margin-bottom: 0px; 
   }
 }
 
@@ -664,7 +685,7 @@ color: var(--navyblue);
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-top: 12px;
+    margin-top: 12px;
 
 }
 
@@ -812,6 +833,7 @@ color: var(--navyblue);
 @media only screen and (min-width: 1158px) {
     .footer-logo {
         margin-right: 120px;
+        margin-bottom: 0px;
         align-items: flex-start;
     }
 }
@@ -972,6 +994,7 @@ width: 100%;
         width: 264px;
         text-align: left;
         margin-left: 108px;
+        margin-bottom: 0px;
     }
 }
 
